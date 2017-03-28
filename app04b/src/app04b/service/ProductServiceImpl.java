@@ -8,7 +8,7 @@ import app04b.domain.Product;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("service1")
 public class ProductServiceImpl implements ProductService {
 	private Map<Long, Product> products = new HashMap<Long, Product>();
 	private AtomicLong generator = new AtomicLong();

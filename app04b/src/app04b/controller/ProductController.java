@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
@@ -19,6 +20,7 @@ public class ProductController {
 	private static final Log logger = LogFactory.getLog(ProductController.class);
 	
 	@Autowired
+	@Qualifier("service1")
 	private ProductService productService;
 	
 	@RequestMapping(value = "/product_input")

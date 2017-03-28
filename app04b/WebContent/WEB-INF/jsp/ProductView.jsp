@@ -15,5 +15,6 @@
         Price: $${product.price}
     </p>
 </div>
+<img src="/Koala.jpg"/>
 </body>
 </html>
